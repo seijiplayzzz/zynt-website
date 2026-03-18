@@ -2,17 +2,17 @@
 // CONFIGURATION
 // TODO: Replace with your actual Facebook username
 // =====================
-const FB_USERNAME = "https://www.facebook.com/Syntrox.Official";
+const FB_USERNAME = "https://www.facebook.com/synt.production/";
 
 // =====================
 // ACCOUNT PACKAGES
 // =====================
 const accountPackages = [
-  { id:1, name:"Package 1", price:59,  specs:"Starter Account Deal",   tags:["Basic","Beginner"],        image:"photos/1.png" },
-  { id:2, name:"Package 2", price:99,  specs:"Standard Account Deal",  tags:["Standard","Popular"],      image:"photos/2.png" },
-  { id:3, name:"Package 3", price:199, specs:"Advanced Account Deal",  tags:["Advanced","More Features"],image:"photos/3.png" },
-  { id:4, name:"Package 4", price:299, specs:"Premium Account Deal",   tags:["Premium","Best Value"],    image:"photos/4.png" },
-  { id:5, name:"Package 5", price:399, specs:"Elite Account Deal",     tags:["Elite","Full Access"],     image:"photos/5.png" },
+  { id:1, name:"Package 1", price:59,  specs:"Starter Account Deal",   tags:["Top-up","Boost HP", "Customize"],        image:"photos/Service.png" },
+  { id:2, name:"Package 2", price:99,  specs:"Standard Account Deal",  tags:["Standard","Popular"],      image:"photos/1.png" },
+  { id:3, name:"Package 3", price:199, specs:"Advanced Account Deal",  tags:["Advanced","More Features"],image:"photos/2.png" },
+  { id:4, name:"Package 4", price:299, specs:"Premium Account Deal",   tags:["Premium","Best Value"],    image:"photos/3.png" },
+  { id:5, name:"Package 5", price:399, specs:"Elite Account Deal",     tags:["Elite","Full Access"],     image:"photos/4.png" },
   { id:6, name:"Service", price:99, specs:"Elite Account Deal",     tags:["Elite","Full Access"],     image:"photos/5.png" }
 ];
 
@@ -32,11 +32,11 @@ const cars = [
   { id:10, name:"Koenigsegg Agera (Pink DRL)", category:"sports",  price:30, specs:"Red · Pink LED DRL · Custom Build",            tags:["Sports","Koenigsegg","Hypercar"],  image:"cars/Koenigsegg (2).png" },
   { id:11, name:"Koenigsegg Agera RS",         category:"sports",  price:30, specs:"White/Black · Carbon Kit · Full Build",        tags:["Sports","Koenigsegg","Hypercar"],  image:"cars/Koenigsegg.png" },
   { id:12, name:"Koenigsegg Agera (Red/Black)",category:"sports",  price:30, specs:"Matte Red · Black Stripe · Convertible",       tags:["Sports","Koenigsegg","Hypercar"],  image:"cars/Koenigsegg (3).png" },
-  { id:13, name:"McLaren 720S",                category:"sports",  price:30, specs:"Carbon Fiber · Matte Black · Full Custom",     tags:["Sports","McLaren","Carbon"],       image:"cars/Mclaren_720s (2).png" },
-  { id:14, name:"Aston Martin Vantage",        category:"sports",  price:30, specs:"Racing Green · Wide Body · Performance Kit",   tags:["Sports","Aston Martin","Modified"],image:"cars/Aston_martin.png" },
+  { id:13, name:"McLaren 720S",                category:"sports",  price:30, specs:"Carbon Fiber · Matte Black · Full Custom",     tags:["Sports","McLaren","Carbon"],       image:"cars/Mclaren 720s (2).png" },
+  { id:14, name:"Aston Martin Vantage",        category:"sports",  price:30, specs:"Racing Green · Wide Body · Performance Kit",   tags:["Sports","Aston Martin","Modified"],image:"cars/Aston martin.png" },
   { id:15, name:"Porsche Carrera GT",          category:"sports",  price:30, specs:"Navy Blue · Convertible · Classic Rims",       tags:["Sports","Porsche","Classic"],      image:"cars/Porsche (2).png" },
-  { id:16, name:"Nissan GTR R35 (Red Bull)",   category:"sports",  price:30, specs:"Red Bull Drift · Full Livery · Wide Kit",      tags:["Sports","Nissan","GTR"],           image:"cars/GTR_R35 (4).png" },
-  { id:17, name:"Nissan GTR R35 (Black)",      category:"sports",  price:30, specs:"Matte Black · Nismo · Yellow Brakes",          tags:["Sports","Nissan","GTR"],           image:"cars/GTR_R35 (3).png" },
+  { id:16, name:"Nissan GTR R35 (Red Bull)",   category:"sports",  price:30, specs:"Red Bull Drift · Full Livery · Wide Kit",      tags:["Sports","Nissan","GTR"],           image:"cars/GTR R35 (4).png" },
+  { id:17, name:"Nissan GTR R35 (Black)",      category:"sports",  price:30, specs:"Matte Black · Nismo · Yellow Brakes",          tags:["Sports","Nissan","GTR"],           image:"cars/GTR R35 (3).png" },
   { id:18, name:"Toyota AE86 Trueno",          category:"sports",  price:30, specs:"JDM · Wide Body · APEX Twin Cam",              tags:["Sports","JDM","Toyota"],           image:"cars/Toyota AE86.png" },
   { id:19, name:"Toyota 86 / FR-S",            category:"sports",  price:30, specs:"Matte Red · Wide Body · Custom Exhaust",       tags:["Sports","Toyota","Modified"],      image:"cars/Toyota.png" },
   { id:20, name:"Ford Mustang GT (Blue)",      category:"sports",  price:30, specs:"Blue · Black Stripes · Custom Rims",           tags:["Sports","Ford","Muscle"],          image:"cars/Mustang.png" },
@@ -191,7 +191,7 @@ function goToFacebookAccounts() {
   const msg = "Hi! I'm interested in the following account packages:\n"
     + items.map(p => `- ${p.name} (${formatPrice(p.price)})`).join("\n")
     + "\n\nKindly let me know how to proceed. Thank you!";
-  window.open(`https://m.me/Syntrox.Official?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // =====================
@@ -256,7 +256,7 @@ function goToFacebook() {
   const msg = "Hi! I'm interested in the following cars:\n"
     + items.map(c => `- ${c.name} (${formatPrice(c.price)})`).join("\n")
     + "\n\nKindly let me know their availability. Thank you!";
-  window.open(`https://m.me/Syntrox.Official?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // =====================
