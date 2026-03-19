@@ -538,7 +538,7 @@ function goToFacebookAccounts() {
   const msg = "Hi! I'm interested in the following account packages:\n"
     + items.map(p => `- ${p.name} (${formatPrice(p.price)})`).join("\n")
     + "\n\nKindly let me know how to proceed. Thank you!";
-  window.open(`https://m.me/Syntrox.Official?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // =====================
@@ -613,7 +613,7 @@ function goToFacebook() {
   const msg = "Hi! I'm interested in the following cars:\n"
     + items.map(c => `- ${c.name} (${formatPrice(c.price)})`).join("\n")
     + "\n\nKindly let me know their availability. Thank you!";
-  window.open(`https://m.me/Syntrox.Official?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // =====================
