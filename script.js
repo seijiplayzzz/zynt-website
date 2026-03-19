@@ -149,7 +149,7 @@ const cars = [
   { id:94,  name:"Ford Transit (JDM Van)",     category:"van",     price:30, specs:"Transit · Dark Red · Japanese Style Wrap",      tags:["Van","Ford","JDM"],                      image:"cars/Ford (7).png" },
 
   // ── MITSUBISHI EVO ───────────────────────────────────────
-  { id:95,  name:"Mitsubishi Evo 9 (Dark Green)",category:"jdm",   price:30, specs:"Evo IX · Dark Green · Varis Body Kit",         tags:["JDM","Mitsubishi","Evo 9"],              image:"cars/Evo_9.png" },
+  { id:95,  name:"Mitsubishi Evo 9 (Dark Green)",category:"jdm",   price:30, specs:"Evo IX · Dark Green · Varis Body Kit",         tags:["JDM","Mitsubishi","Evo 9"],              image:"cars/Evo 9.png" },
   { id:96,  name:"Mitsubishi Evo 9 (Yellow)",  category:"jdm",     price:30, specs:"Evo IX · Yellow · Stock Spec",                  tags:["JDM","Mitsubishi","Evo 9"],              image:"cars/Evo 9 (2).png" },
   { id:97,  name:"Mitsubishi Evo 9 (Gray)",    category:"jdm",     price:30, specs:"Evo IX · Gray · Slammed Build",                 tags:["JDM","Mitsubishi","Evo 9"],              image:"cars/Evo 9 (3).png" },
   { id:98,  name:"Mitsubishi Evo 9 (Dark Red)",category:"jdm",     price:30, specs:"Evo IX · Dark Red · FQ-320",                    tags:["JDM","Mitsubishi","Evo 9"],              image:"cars/Evo 9 (4).png" },
