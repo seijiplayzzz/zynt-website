@@ -534,10 +534,19 @@ function showAccountModal() {
 function closeAccountModal() { document.getElementById("accountModalOverlay").classList.remove("visible"); }
 
 function goToFacebookAccounts() {
+  const BASE_URL = "https://raw.githubusercontent.com/seijiplayzzz/zynt-website/main/";
   const items = Object.values(accountCart);
-  const msg = "Hi! I'm interested in the following account packages:\n"
-    + items.map(p => `- ${p.name} (${formatPrice(p.price)})`).join("\n")
-    + "\n\nKindly let me know how to proceed. Thank you!";
+  const msg = "Hi! I want to order the following packages:\n\n"
+    + items.map((p, i) =>
+        `${i + 1}. ${p.name}\n`
+      + `   Price: ${formatPrice(p.price)}\n`
+      + `   Details: ${p.specs}\n`
+      + `   Photo: ${BASE_URL}${p.image}`
+      ).join("\n\n")
+    + "\n\n---\n"
+    + `Total: ${formatPrice(items.reduce((s, p) => s + p.price, 0))}\n`
+    + `Total Packages: ${items.length}\n\n`
+    + "Kindly let me know how to proceed. Thank you!";
   window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
@@ -609,10 +618,19 @@ document.getElementById("modalOverlay").addEventListener("click", function(e) { 
 document.getElementById("accountModalOverlay").addEventListener("click", function(e) { if (e.target === this) closeAccountModal(); });
 
 function goToFacebook() {
+  const BASE_URL = "https://raw.githubusercontent.com/seijiplayzzz/zynt-website/main/";
   const items = Object.values(carCart);
-  const msg = "Hi! I'm interested in the following cars:\n"
-    + items.map(c => `- ${c.name} (${formatPrice(c.price)})`).join("\n")
-    + "\n\nKindly let me know their availability. Thank you!";
+  const msg = "Hi! I want to order the following cars:\n\n"
+    + items.map((c, i) =>
+        `${i + 1}. ${c.name}\n`
+      + `   Price: ${formatPrice(c.price)}\n`
+      + `   Specs: ${c.specs}\n`
+      + `   Photo: ${BASE_URL}${c.image}`
+      ).join("\n\n")
+    + "\n\n---\n"
+    + `Total: ${formatPrice(items.reduce((s, c) => s + c.price, 0))}\n`
+    + `Total Cars: ${items.length}\n\n`
+    + "Kindly let me know their availability. Thank you!";
   window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
