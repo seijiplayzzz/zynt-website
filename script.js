@@ -424,7 +424,7 @@ const cars = [
   // ── VOLKSWAGEN ────────────────────────────────────────────
   { id:272, name:"Volkswagen T1 Bus (Red Surf)",      category:"classic", price:30, specs:"VW T1 Bus · Red/White · Surf Board · Beach",    tags:["Classic","Volkswagen","Bus"],           image:"cars/Volkswagen.png" },
   { id:273, name:"Volkswagen Scirocco (Pink)",        category:"sports",  price:30, specs:"Scirocco · Pink · Gold Wheels · Stanced",       tags:["Sports","Volkswagen","Scirocco"],       image:"cars/Volkswagen (2).png" },
-  { id:274, name:"Volkswagen Passat 2.0 TDI (Black)", category:"classic", price:30, specs:"Passat · Matte Black · 2.0 TDI · Slammed",      tags:["Classic","Volkswagen","Passat"],        image:"cars/Volkswagen (3).png" },
+  { id:274, name:"Volkswagen Passat 2.0 TDI (Black)", category:"classic", price:30, specs:"Passat · Matte Black · 2.0 TDI · Slammed",      tags:["Classic","Volkswagen","Passat"],        image:"cars/Volkswagen (3).png" }
 
 ];
 
