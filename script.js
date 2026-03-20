@@ -547,7 +547,7 @@ function goToFacebookAccounts() {
     + `Total: ${formatPrice(items.reduce((s, p) => s + p.price, 0))}\n`
     + `Total Packages: ${items.length}\n\n`
     + "Kindly let me know how to proceed. Thank you!";
-  window.open(`https://m.me/Syntrox.Official?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // =====================
@@ -631,7 +631,7 @@ function goToFacebook() {
     + `Total: ${formatPrice(items.reduce((s, c) => s + c.price, 0))}\n`
     + `Total Cars: ${items.length}\n\n`
     + "Kindly let me know their availability. Thank you!";
-  window.open(`https://m.me/Syntrox.Official?text=${encodeURIComponent(msg)}`, "_blank");
+  window.open(`https://m.me/synt.production?text=${encodeURIComponent(msg)}`, "_blank");
 }
 
 // =====================
