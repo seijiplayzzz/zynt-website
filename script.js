@@ -534,7 +534,7 @@ function showAccountModal() {
 function closeAccountModal() { document.getElementById("accountModalOverlay").classList.remove("visible"); }
 
 function goToFacebookAccounts() {
-  const BASE_URL = "https://raw.githubusercontent.com/seijiplayzzz/zynt-website/main/photos";
+  const BASE_URL = "https://github.com/seijiplayzzz/zynt-website/tree/main/cars";
   const items = Object.values(accountCart);
   const msg = "Hi! I want to order the following packages:\n\n"
     + items.map((p, i) =>
@@ -618,7 +618,7 @@ document.getElementById("modalOverlay").addEventListener("click", function(e) { 
 document.getElementById("accountModalOverlay").addEventListener("click", function(e) { if (e.target === this) closeAccountModal(); });
 
 function goToFacebook() {
-  const BASE_URL = "https://raw.githubusercontent.com/seijiplayzzz/zynt-website/main/cars";
+  const BASE_URL = "https://github.com/seijiplayzzz/zynt-website/tree/main/cars";
   const items = Object.values(carCart);
   const msg = "Hi! I want to order the following cars:\n\n"
     + items.map((c, i) =>
