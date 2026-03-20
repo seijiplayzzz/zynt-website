@@ -572,7 +572,7 @@ function goToFacebookAccounts() {
     + `Total: ${formatPrice(items.reduce((s, p) => s + p.price, 0))}\n`
     + `Total Packages: ${items.length}\n\n`
     + "Kindly let me know how to proceed. Thank you!";
-  const url = "https://www.facebook.com/messages/t/synt.production";
+  const url = "https://www.messenger.com/t/158254004031781";
   window.open(url + "?text=" + encodeURIComponent(msg), "_blank");
 }
 
@@ -657,7 +657,7 @@ function goToFacebook() {
     + `Total: ${formatPrice(items.reduce((s, c) => s + c.price, 0))}\n`
     + `Total Cars: ${items.length}\n\n`
     + "Kindly let me know their availability. Thank you!";
-  const url = "https://www.facebook.com/messages/t/synt.production";
+  const url = "https://www.messenger.com/t/158254004031781";
   window.open(url + "?text=" + encodeURIComponent(msg), "_blank");
 }
 
